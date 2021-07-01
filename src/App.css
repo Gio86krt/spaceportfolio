@@ -1,3 +1,25 @@
+.background {
+  min-height: 950px;
+  padding-bottom: 30px;
+  width: auto;
+  display: block;
+  position: relative;
+}
+
+main::before {
+  content: "";
+  background-image: url("./stars.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +57,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.annotation {
+  transform: translate3d(-50%, -180%, 0);
+  text-align: left;
+  background: #7676aa;
+  color: rgb(7, 6, 20);
+  padding: 16px;
+  border-radius: 5px;
+  font-size: 2.6rem;
+}
+
+.dialog {
+  z-index: 999;
+  width: 250px;
+  height: 150px;
+  background: rgba(88, 88, 207, 0.5);
+  position: fixed;
+  right: 0;
+  top: 0;
+  border-bottom-left-radius: 10px;
+  color: aliceblue;
+  padding: 8px;
+}
+
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+svg {
+  cursor: pointer;
+}
+.details {
+  margin-top: 12px;
+}
+.article-link {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 999;
+  color: whitesmoke;
+  font-size: 0.75rem;
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(90deg, #4666b7 0%, #a242b1 100%);
+  box-shadow: 5px 5px 7px rgba(171, 125, 187, 0.22);
+  border-radius: 99px;
+  padding: 8px 16px;
+  text-decoration: none;
 }
