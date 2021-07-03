@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import React from "react";
 
 function Item(props) {
@@ -12,11 +11,9 @@ function Item(props) {
     opacity: "0.9",
   };
 
-  let html = "";
-
   console.log(image);
   return (
-    <div className="col-12" style={styling}>
+    <div className="col-12 item" style={styling}>
       <img
         style={{ border: "solid lightgrey" }}
         src={window.location.origin + image}
@@ -42,14 +39,13 @@ function Item(props) {
             })}
           </ul>
           <br></br>
-          {/* <div style={{ position: "relative", top: "50px" }}> */}
+
           <a href={url} target="_blank" className="btn btn-success btn-sm">
             Try it!
           </a>
           <a href={repoLink} target="_blank" className="btn btn-primary btn-sm">
             Go to Repository
           </a>
-          {/* </div> */}
         </div>
       </div>
     </div>

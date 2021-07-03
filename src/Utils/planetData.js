@@ -11,14 +11,15 @@ const randomInt = (a, b) => Math.floor(random(a, b));
 const randomColor = () =>
   `rgb(${randomInt(80, 50)}, ${randomInt(80, 50)}, ${randomInt(80, 50)})`;
 
-const shuffle = (a) => {
-  const temp = a.slice(0);
-  for (let i = temp.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [temp[i], temp[j]] = [temp[j], temp[i]];
-  }
-  return temp;
-};
+// const shuffle = (a) => {
+//   const temp = a.slice(0);
+//   for (let i = temp.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     [temp[i], temp[j]] = [temp[j], temp[i]];
+//   }
+//   return temp;
+// };
+
 const textures = [tx1, tx2, tx3, tx4, tx5, tx6, tx7];
 const names = [
   "NodeJS",
@@ -28,6 +29,16 @@ const names = [
   "ReactJS",
   "SQL",
   "MongoDB",
+];
+
+const descriptions = [
+  "NodeJS-description",
+  "Css3-description",
+  "JavaScript-description",
+  "Html5-description",
+  "ReactJS-description",
+  "SQL-description",
+  "MongoDB-description",
 ];
 
 const planetData = [];
@@ -44,6 +55,7 @@ for (let index = 0; index < totalPlanets; index++) {
     rotationSpeed: random(0.008, 0.004),
     textureMap: textures[index],
     name: names[index],
+    description: descriptions[index],
   });
 }
 

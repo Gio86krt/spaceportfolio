@@ -110,3 +110,15 @@ svg {
   padding: 8px 16px;
   text-decoration: none;
 }
+
+.portfolio {
+  margin-top: 5%;
+  padding-left: 3%;
+}
+
+.portfolio-header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-shadow: 3px 3px 3px rgb(176, 231, 201);
+
+  color: blue;
+}
