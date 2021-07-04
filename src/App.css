@@ -67,35 +67,50 @@ main::before {
   padding: 16px;
   border-radius: 5px;
   font-size: 2.6rem;
+  z-index: -1;
 }
 
 .dialog {
   z-index: 999;
-  width: 250px;
-  height: 150px;
-  background: rgba(88, 88, 207, 0.5);
+  width: 550px;
+  height: 450px;
+  background: rgba(88, 88, 207, 0.9);
   position: fixed;
-  right: 0;
-  top: 0;
+  top: -250px;
   border-bottom-left-radius: 10px;
   color: aliceblue;
   padding: 8px;
 }
 
 .dialog-header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 2.5rem;
   margin-bottom: 16px;
 }
+
+.content {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+}
+
+.proficiency {
+  position: absolute;
+  bottom: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+}
+
 svg {
   cursor: pointer;
 }
+
 .details {
   margin-top: 12px;
 }
+
 .article-link {
   position: fixed;
   bottom: 16px;

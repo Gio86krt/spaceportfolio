@@ -85,10 +85,35 @@ function Planet({
   const [isOver, setIsOver] = useState(false);
 
   const texture = useLoader(THREE.TextureLoader, textureMap);
+  let iconsFull = [];
+  let iconsEmpty = [];
 
-  // const showModal = (data) => {
-  //   return <div className="annotation">{data}</div>;
-  // };
+  for (let i = 0; i < 5; i++) {
+    i < description.proficiency
+      ? iconsFull.push(<i class="fa fa-star" aria-hidden="true"></i>)
+      : iconsEmpty.push(<i class="fa fa-star-o" aria-hidden="true"></i>);
+  }
+
+  const showDescription = () => {
+    return (
+      <div className="dialog">
+        <div className="dialog-header">
+          {description.title}
+          {/* <img style={{ fontSize: "0.5rem" }} src={description.icon}></img> */}
+        </div>
+
+        <div className="content">{description.content}</div>
+        <div className="proficiency">
+          Proficiency: {iconsFull.map((el) => el)}
+          {iconsEmpty.map((el) => el)}
+        </div>
+      </div>
+    );
+  };
+
+  const showName = () => {
+    return <div className="annotation">{name}</div>;
+  };
 
   useFrame(({ clock }) => {
     if (isOver) return;
@@ -115,7 +140,7 @@ function Planet({
         <sphereGeometry args={[size, 32, 32]} />
         <meshStandardMaterial map={texture} />
         <Html distanceFactor={12}>
-          <div className="annotation">{isOver ? description : name}</div>
+          {isOver ? showDescription() : showName()}
         </Html>
       </mesh>
       <Ecliptic xRadius={xRadius} zRadius={zRadius} />

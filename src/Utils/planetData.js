@@ -21,24 +21,53 @@ const randomColor = () =>
 // };
 
 const textures = [tx1, tx2, tx3, tx4, tx5, tx6, tx7];
-const names = [
-  "NodeJS",
-  "Css3",
-  "JavaScript",
-  "Html5",
-  "ReactJS",
-  "SQL",
-  "MongoDB",
-];
+// const names = [
+//   "NodeJS",
+//   "Css3",
+//   "JavaScript",
+//   "Html5",
+//   "ReactJS",
+//   "SQL",
+//   "MongoDB",
+// ];
 
 const descriptions = [
-  "NodeJS-description",
-  "Css3-description",
-  "JavaScript-description",
-  "Html5-description",
-  "ReactJS-description",
-  "SQL-description",
-  "MongoDB-description",
+  {
+    title: "NodeJS",
+    content: "Back end technology, used to create and manage the server. ",
+    proficiency: 4,
+    icon: "./textures/JSicon.png",
+  },
+  {
+    title: "Css3",
+    content: "some description of the tech",
+    proficiency: 4,
+  },
+  {
+    title: "JavaScript",
+    content: "some description of the tech",
+    proficiency: 5,
+  },
+  {
+    title: "Html5",
+    content: "some description of the tech",
+    proficiency: 5,
+  },
+  {
+    title: "ReactJS",
+    content: "some description of the tech",
+    proficiency: 5,
+  },
+  {
+    title: "SQL",
+    content: "some description of the tech",
+    proficiency: 4,
+  },
+  {
+    title: "MongoDB",
+    content: "some description of the tech",
+    proficiency: 4,
+  },
 ];
 
 const planetData = [];
@@ -54,7 +83,7 @@ for (let index = 0; index < totalPlanets; index++) {
     offset: random(0, Math.PI * 2),
     rotationSpeed: random(0.008, 0.004),
     textureMap: textures[index],
-    name: names[index],
+    name: descriptions[index].title,
     description: descriptions[index],
   });
 }
