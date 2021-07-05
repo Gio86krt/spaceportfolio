@@ -34,38 +34,45 @@ const textures = [tx1, tx2, tx3, tx4, tx5, tx6, tx7];
 const descriptions = [
   {
     title: "NodeJS",
-    content: "Back end technology, used to create and manage the server. ",
+    content:
+      "Experienced with NodeJS and relative NPM packages such as Express, Dotenv, Socket and more. Projects implemented with Node include: Client Management System, Fitness Tracker, Note Taker.",
     proficiency: 4,
     icon: "./textures/JSicon.png",
   },
   {
     title: "Css3",
-    content: "some description of the tech",
+    content:
+      "Strong familiarity with CSS3, currently working on SASS. Examples of CSS implementation are: Weather Dashboard, Daily Planner, Employee Manager.",
     proficiency: 4,
   },
   {
     title: "JavaScript",
-    content: "some description of the tech",
+    content:
+      "Proficient with ES6 syntax, both Vanilla and using libraries such as JQuery. All the projects in the portfolio have a strong usage of JavaScript.",
     proficiency: 5,
   },
   {
     title: "Html5",
-    content: "some description of the tech",
+    content:
+      "Confident with HTML5 and its tags, examples of HTML implementation are: Weather Dashboard, Daily Planner, Reddit App.",
     proficiency: 5,
   },
   {
     title: "ReactJS",
-    content: "some description of the tech",
+    content:
+      "Proficient with ReactJS, also using Hooks and packages such as react-boostrap, react-router-dom and three.js. This very website is built using React, and three.js for the animations and the canvas. Another example of React usage is Employee Tracker.",
     proficiency: 5,
   },
   {
     title: "SQL",
-    content: "some description of the tech",
+    content:
+      "Strong familiarity with SQL, particularly with Sequelize, apps like Clients Management System are an example of SQL usage.",
     proficiency: 4,
   },
   {
     title: "MongoDB",
-    content: "some description of the tech",
+    content:
+      "Strong familiarity with MongoDB and Mongoose, check out Fitness Tracker app for an example.",
     proficiency: 4,
   },
 ];

@@ -15,10 +15,10 @@
   padding-left: 70px;
 }
 
-.nav-link {
+.links {
   font-size: 20px;
   padding-top: 30px;
-  color: lightblue;
+  padding-left: 55px;
 }
 
 @media only screen and (max-width: 600px) {

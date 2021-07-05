@@ -27,34 +27,32 @@ function Header() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="container">
-            <div className="links">
-              <a href="https://www.linkedin.com/in/giovanni-orlando-a902a472/">
-                <i
-                  className="fa fa-linkedin-square"
-                  style={{ fontSize: "48px", color: "green" }}
-                ></i>
-              </a>
-              <a href="https://github.com/Gio86krt">
-                <i
-                  class="fa fa-github"
-                  style={{ fontSize: "48px", color: "white" }}
-                ></i>
-              </a>
-              <a href={window.location.origin + resume} download>
-                <i
-                  class="fa fa-download"
-                  style={{ fontSize: "48px", color: "red" }}
-                ></i>
-              </a>
-              <a href={"mailto:webdevgiova86@gmail.com"}>
-                <i
-                  class="fa fa-envelope-o"
-                  aria-hidden="true"
-                  style={{ fontSize: "48px", color: "whitesmoke" }}
-                ></i>
-              </a>
-            </div>
+          <div className="container links">
+            <a href="https://www.linkedin.com/in/giovanni-orlando-a902a472/">
+              <i
+                className="fa fa-linkedin-square"
+                style={{ fontSize: "48px", color: "green" }}
+              ></i>
+            </a>
+            <a href="https://github.com/Gio86krt">
+              <i
+                class="fa fa-github"
+                style={{ fontSize: "48px", color: "white" }}
+              ></i>
+            </a>
+            <a href={window.location.origin + resume} download>
+              <i
+                class="fa fa-download"
+                style={{ fontSize: "48px", color: "red" }}
+              ></i>
+            </a>
+            <a href={"mailto:webdevgiova86@gmail.com"}>
+              <i
+                class="fa fa-envelope-o"
+                aria-hidden="true"
+                style={{ fontSize: "48px", color: "whitesmoke" }}
+              ></i>
+            </a>
           </div>
         </div>
       </nav>
