@@ -35,10 +35,9 @@ function About() {
             Communication, Effectiveness and Resilience.
             <br />
             <br />
-            When I'm not coding or learning something new, I like exercising,
-            reading, and cooking. From time to time I get obsessed with a new
-            subject.. in the last few months it's been anything related to space
-            and astronomy.
+            Currently looking to start my career in Tech, open to
+            collaborations, internships or entry level roles. Please use the
+            icons on the top right of the page to get in touch with me.
             <br />
             <br />
           </div>

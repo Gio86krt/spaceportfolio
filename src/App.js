@@ -37,7 +37,7 @@ export default function App() {
         <Canvas
           className="canvas"
           style={styling}
-          camera={{ position: [0, 20, 25], fov: 45 }}
+          camera={{ position: [0, 20, 25], fov: 60 }}
         >
           <Suspense fallback={null}>
             <Sun />

@@ -28,31 +28,33 @@ function Item(props) {
       </div>
 
       <div className="card-body">
-        <h5 className="card-title">{name}</h5>
-        <p className="card-text">{description}</p>
+        <div className="card-text">
+          <h5 className="card-title">{name}</h5>
+          <p className="card-text">{description}</p>
+          <br></br>
+          <ul className="card-title">
+            <span
+              style={{
+                fontSize: "19px",
+                fontWeight: "bold",
+              }}
+            >
+              Technologies Used:
+            </span>
+            {techUsed.map((el) => {
+              return <li>{el}</li>;
+            })}
+          </ul>
+        </div>
         <br></br>
-        <ul className="card-title">
-          <span
-            style={{
-              fontSize: "19px",
-              fontWeight: "bold",
-            }}
-          >
-            Technologies Used:
-          </span>
-          {techUsed.map((el) => {
-            return <li>{el}</li>;
-          })}
-        </ul>
-        <br></br>
-      </div>
-      <div className="buttons">
-        <a href={url} target="_blank" className="btn btn-success btn-sm">
-          Try it!
-        </a>
-        <a href={repoLink} target="_blank" className="btn btn-primary btn-sm">
-          Go to Repository
-        </a>
+        <div className="buttons">
+          <a href={url} target="_blank" className="btn btn-success btn-sm">
+            Try it!
+          </a>
+          <a href={repoLink} target="_blank" className="btn btn-primary btn-sm">
+            Go to Repository
+          </a>
+        </div>
       </div>
     </div>
   );
